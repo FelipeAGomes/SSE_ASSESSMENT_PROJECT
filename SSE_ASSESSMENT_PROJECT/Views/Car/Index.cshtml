@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Car List";
+}
+@model List<Car>
+<p class="d-flex justify-content-center align-items-center w-100">My project as a Software Engineer showcases a real-time digital clock at the top, a centrally aligned name in the navigation menu, a randomized list of items with a button to display an additional list that utilizes an Ajax call to randomize the list. The expanded list includes a close button that is hide when the list is closed. The left content displays cursor coordinates, while the right side contains an image carousel.
+    The footer features a link to the Allari page with a smooth style. This project highlights my web development skills and dynamic interactions.</p>
+<ul id="first-list" class="list-group mt-3">
+    @foreach (var car in Model)
+    {
+        <li class='list-group-item text-center'>Model: @car.Model - Brand: @car.Brand </li>;
+        }
+</ul>
+
+

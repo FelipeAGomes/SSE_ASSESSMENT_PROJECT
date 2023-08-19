@@ -20,3 +20,121 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.custom-bg {
+    background-color: #333;
+}
+
+.custom-bg-footer {
+    background-color: #ddd;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.mouse-info {
+    margin: 0 10px;
+}
+
+.position-square {
+    background-color: #ddd;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.position-square p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.position-square span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: transparent;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.btnn {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #3c53c7;
+    box-shadow: 0 2px 8px -2px rgba(#3c53c7, 0.5);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateY(0);
+}
+
+.btnn.ripple {
+    background-position: center;
+    transition: background .8s;
+}
+
+    .btnn.ripple:hover {
+        background: #3c53c7 radial-gradient(circle, transparent 1%, #3c53c7 1%) 50%/16000%;
+    }
+
+.btnn.ripple:active {
+    background-color: white;
+    background-size: 100%;
+    transition: background 0s, transform .2s;
+    transform: translateY(1px);
+}
