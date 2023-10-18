@@ -7,4 +7,3 @@ namespace SSE_ASSESSMENT_PROJECT.Services
 		List<Car> GetCars();
 	}
 }
-
